@@ -6,8 +6,23 @@
 
 /* box sizing */
 
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 /* element styling (e.g. standard p, h1, h2, a, etc) */
+
+h1, h2 {
+  font-family: 'Cabin', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
 
 
 /* flexible content images code */
@@ -15,11 +30,132 @@
 
 /* navigation (using flexbox) */
 
+.page-nav {
+  padding-top: 0.3rem;
+  background-color: rgb(195, 195, 195);
+  z-index: 150;
+  position: relative;
+  height: 5rem;
+  margin-bottom: -80px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+.main {
+  background: #f2f2e8;
+  padding: 110px 50px 50px;
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.page-nav ul {
+  margin: 0;
+  padding: 0!important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.page-nav a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 0.9rem;
+  max-width: 12rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.page-nav a:link, .page-nav a:visited, .page-nav a:hover, .page-nav a:active {
+  color: rgb(0, 0, 0);
+}
+
+@keyframes grow {
+  0% {
+    font-size: 0.9rem;
+  }
+  100% {
+    font-size: 0.1rem;;
+  }
+}
+
+.page-nav ul li:active {
+  color: blue;
+  animation-name: grow;
+  animation-duration: 0.5s;
+}
+
+
+.page-nav i {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.3rem;
+}
+
+.page-nav p {
+  padding-bottom: 0.1rem;
+  padding-top: 0;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.page-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-nav a {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 140px;
+    }
+
+    .page-nav ul {
+      justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 347px) {
+    .page-nav a {
+      padding-right: 0.2rem;
+      padding-left: 0.1rem;
+      float: left;
+    }
+
+    .page-nav ul {
+      justify-content: center;
+    }
+
+    .page-nav p {
+      display: none;
+    }
+}
 
 /* page header */
 
+.page-header {
+  padding-top: 80px;
+}
 
 /* main layout */
+
+.container-content p, .container-content h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section, .header-content {
+  padding-left: 1%;
+  padding-right: 10%;
+}
+
 
 
 /* styling for the section content */
