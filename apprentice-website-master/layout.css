@@ -10,6 +10,9 @@ html {
   box-sizing: border-box;
   font-size: 16px;
 }
+body {
+  margin: 0;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -17,11 +20,14 @@ html {
 /* element styling (e.g. standard p, h1, h2, a, etc) */
 
 h1, h2 {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+  color: rgb(106, 106, 106);
 }
 
 
@@ -73,19 +79,8 @@ p {
   color: rgb(0, 0, 0);
 }
 
-@keyframes grow {
-  0% {
-    font-size: 0.9rem;
-  }
-  100% {
-    font-size: 0.1rem;;
-  }
-}
-
 .page-nav ul li:active {
-  color: blue;
-  animation-name: grow;
-  animation-duration: 0.5s;
+  color: #fff;
 }
 
 
@@ -102,6 +97,7 @@ p {
   padding-bottom: 0.1rem;
   padding-top: 0;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
+  color: #000;
 }
 
 .page-nav-scrolled {
@@ -141,6 +137,26 @@ p {
 /* page header */
 
 .page-header {
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-header h1 {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid black;
+  padding-top: 200px;
+  max-width: 10rem;
+  justify-content: center;
+  display: inline;
+  font-size: 3rem;
+}
+
+.page-header p {
+  font-size: 1.5rem;
+}
+
+section {
   padding-top: 80px;
 }
 
@@ -151,15 +167,19 @@ p {
   margin-right: auto;
 }
 
-section, .header-content {
-  padding-left: 1%;
-  padding-right: 10%;
-}
-
-
-
 /* styling for the section content */
 
+
+section, .header-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.container-content h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* background colours for sections */
 
@@ -170,4 +190,16 @@ section, .header-content {
 /* form styling */
 
 
+
+
 /* footer */
+
+footer {
+  padding-top: 0.1rem;
+  background-color: rgb(195, 195, 195);
+  position: relative;
+  height: 5rem;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+}
