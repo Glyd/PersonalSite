@@ -75,11 +75,11 @@ p {
   color: rgb(0, 0, 0);
 }
 
-.page-nav a:link, .page-nav a:visited, .page-nav a:hover, .page-nav a:active {
+.page-nav a:link, .page-nav a:visited, .page-nav a:hover {
   color: rgb(0, 0, 0);
 }
 
-.page-nav ul li:active {
+.page-nav ul a li:active {
   color: #fff;
 }
 
@@ -157,7 +157,7 @@ p {
 }
 
 section {
-  padding-top: 80px;
+  padding-top: 3.5rem;
 }
 
 /* main layout */
@@ -186,9 +186,55 @@ section, .header-content {
 
 /* image gallery media queries and size overrides */
 
+.image-gallery-container .container-content .content {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+      -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 40px; /* Firefox */
+      column-gap: 40px;
+}
+
+.image-gallery-container .an-image {
+  column-span: 1;
+  border: 1px solid rgb(196, 196, 196);
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 950px) {
+  .image-gallery-container .container-content .content {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-gallery-container .an-image {
+    padding-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
+}
 
 /* form styling */
 
+input, label {
+  text-align: center;
+  margin-top: 0.5rem;
+  width: 10rem;
+}
+
+label {
+  margin-right: 2rem;
+}
 
 
 
