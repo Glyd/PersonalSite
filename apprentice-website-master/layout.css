@@ -9,6 +9,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  color: #000;
 }
 body {
   margin: 0;
@@ -24,10 +25,13 @@ h1, h2 {
   letter-spacing: 0.1rem;
 }
 
-body p {
+p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
   text-align: center;
+}
+
+body section p {
   color: rgb(106, 106, 106);
 }
 
@@ -78,17 +82,16 @@ body p {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
   font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
-.page-nav a:link, .page-nav a:visited, .page-nav a:hover {
+.page-nav a, .page-nav a:link, .page-nav a:focus .page-nav a:visited, .page-nav a:hover {
   color: rgb(0, 0, 0);
 }
 
 .page-nav a:active {
   margin-top: -5px;
-  color: #fff!important;
+  color: #fff !important;
   font-size: 1.2rem;
 }
 
@@ -256,8 +259,6 @@ label {
   margin-right: 2rem;
   display: inline-block;
 }
-
-
 
 /* footer */
 

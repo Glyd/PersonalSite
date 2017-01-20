@@ -10,16 +10,14 @@
     <title>Darius Lewis</title>
     <!-- add your stylesheet and any other styling code, e.g. google fonts -->
     <link rel="stylesheet" href="layout.css" />
-    <script src="https://use.fontawesome.com/53da205558.js"></script> <!-- FontAesome for icons -->
+    <script src="https://use.fontawesome.com/53da205558.js"></script> <!-- FontAwesome for icons -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
   </head>
 
 <body>
@@ -113,14 +111,14 @@
                             <label for="contact-email">Email Address</label>
                             <input id="contact-email" type="email" name="contact-email" /> </p>
                         <p>
-                            <label for="contact-phone">Phone number</label>
+                            <label for="contact-phone">Phone Number</label>
                             <input id="contact-phone" type="tel" name="contact-phone" /> </p>
                         <p>
                             <label for="contact-message">Your message:</label>
                             <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
                         </p>
                         <p>
-                            <input type="submit" value="send my message" /> </p>
+                            <input type="submit" value="Send my message!" /> </p>
                     </form>
                 </div>
             </div>
@@ -136,15 +134,15 @@
             </div>
         </footer>
         <script type="text/javascript">
-          var  mn = $(".page-nav");
-              mns = "page-nav-scrolled";
-              hdr = $('header').height();
+          var  nav = $(".page-nav");
+              navScrolled = "page-nav-scrolled";
+              header = $('header').height();
 
           $(window).scroll(function() {
-            if( $(this).scrollTop() > hdr ) {
-              mn.addClass(mns);
+            if( $(this).scrollTop() > header ) {
+              nav.addClass(navScrolled);
             } else {
-              mn.removeClass(mns);
+              nav.removeClass(navScrolled);
             }
           });
         </script>
