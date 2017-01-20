@@ -21,9 +21,10 @@ body {
 
 h1, h2 {
   font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.1rem;
 }
 
-p {
+body p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
   text-align: center;
@@ -86,7 +87,9 @@ p {
 }
 
 .page-nav a:active {
+  margin-top: -5px;
   color: #fff!important;
+  font-size: 1.2rem;
 }
 
 .page-nav i {
@@ -224,11 +227,20 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .image-gallery-container .an-image {
     padding-top: 0.1rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .image-gallery-container .container-content .content {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
