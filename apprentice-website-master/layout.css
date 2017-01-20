@@ -204,6 +204,7 @@ section, .header-content {
 img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 @media only screen and (max-width: 950px) {
