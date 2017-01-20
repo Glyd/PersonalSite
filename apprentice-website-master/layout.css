@@ -64,25 +64,30 @@ p {
 
 .page-nav a {
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  position: relative
+}
+
+.page-nav p {
+  padding-top: 0rem;
   font-size: 0.9rem;
   max-width: 12rem;
   font-weight: bold;
-  text-decoration: none;
-  display: flex;
-  align-items: flex-start;
+  text-align: center;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
 .page-nav a:link, .page-nav a:visited, .page-nav a:hover {
   color: rgb(0, 0, 0);
 }
 
-.page-nav ul a li:active {
-  color: #fff;
+.page-nav a:active {
+  color: #fff!important;
 }
-
 
 .page-nav i {
   margin: 0;
@@ -93,20 +98,13 @@ p {
   padding-top: 0.3rem;
 }
 
-.page-nav p {
-  padding-bottom: 0.1rem;
-  padding-top: 0;
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  color: #000;
-}
-
 .page-nav-scrolled {
   position: fixed;
   width: 100%;
   top: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .page-nav a {
       padding-left: 0;
       padding-right: 0;
@@ -118,15 +116,24 @@ p {
     }
 }
 
-@media only screen and (max-width: 347px) {
-    .page-nav a {
-      padding-right: 0.2rem;
-      padding-left: 0.1rem;
+@media only screen and (max-width: 330px) {
+    .page-nav li {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      border-right: 2px solid black;
       float: left;
     }
 
+    .page-nav li:last-child{
+    border: 0;
+}
+
     .page-nav ul {
       justify-content: center;
+    }
+
+    .page-nav {
+      height: 50px;
     }
 
     .page-nav p {
@@ -235,6 +242,7 @@ input, label {
 
 label {
   margin-right: 2rem;
+  display: inline-block;
 }
 
 
