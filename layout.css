@@ -192,6 +192,7 @@ section, .header-content {
 .image-gallery-container .an-image {
   column-span: 1;
   border: 1px solid #DCD8CF;
+  border-radius: 2px;
 
 }
 
