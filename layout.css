@@ -13,7 +13,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: #111111;
+  background-color: #191919;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -44,7 +44,7 @@ body section p {
 
 .page-nav {
   padding-top: 0.3rem;
-  background-color: #111111;
+  background-color: #191919;
   z-index: 150;
   position: relative;
   height: 5rem;
@@ -53,7 +53,7 @@ body section p {
 }
 
 .main {
-  background: #111111;
+  background: #191919;
   padding: 110px 50px 50px;
   column-count: 2;
   column-gap: 40px;
@@ -274,7 +274,7 @@ textarea {
 
 footer {
   padding-top: 0.2rem;
-  background-color: #111111;
+  background-color: #191919;
   position: relative;
   height: 5rem;
   border-top: 1px solid #DCD8CF;
