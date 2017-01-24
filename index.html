@@ -101,6 +101,7 @@
         <section id="contact" class="contact-me container">
             <div class="container-content">
                 <h2>Contact Me</h2>
+                <input type="submit" class="button show-button" value="Show Form" /> </p>
                 <div class="content">
                     <form action="https://formspree.io/darius.lewis@stu.mmu.ac.uk" method="post">
                         <p>
@@ -118,7 +119,7 @@
                             <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
                         </p>
                         <p>
-                            <input type="submit" class="submit-button" value="Send my message" /> </p>
+                            <input type="submit" class="button submit-button" value="Send my message" /> </p>
                     </form>
                 </div>
             </div>
@@ -140,12 +141,30 @@
               navScrolled = "page-nav-scrolled";
               header = $('header').height();
 
+          var formShown=false;
+
           $(window).scroll(function() {
             if( $(this).scrollTop() > header ) {
               nav.addClass(navScrolled);
             } else {
               nav.removeClass(navScrolled);
             }
+          });
+
+          $(function() {
+            $(".show-button").click( function()
+                 {
+                   if (formShown) {
+                     $('#contact .container-content .content').addClass("form-hide");
+                     $('#contact .container-content .content').removeClass("form-show");
+                     formShown=false;
+                   } else {
+                     $('#contact .container-content .content').addClass("form-show");
+                     $('#contact .container-content .content').removeClass("form-hide");
+                     formShown=true;
+                   }
+                 }
+            );
           });
         </script>
     </main>
