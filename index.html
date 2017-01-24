@@ -101,8 +101,8 @@
         <section id="contact" class="contact-me container">
             <div class="container-content">
                 <h2>Contact Me</h2>
-                <input type="submit" class="button show-button form-hide" value="Show Form" /> </p>
-                <div class="content">
+                <input type="submit" class="button show-button form-hide" value="Show Form" /> <br/>
+                <div class="content form-show">
                     <form action="https://formspree.io/darius.lewis@stu.mmu.ac.uk" method="post">
                         <p>
                             <label for="contact-name">Name</label>
@@ -122,28 +122,6 @@
                             <input type="submit" class="button submit-button" value="Send my message" /> </p>
                     </form>
                 </div>
-                <noscript>
-                  <div class="content form-show">
-                      <form action="https://formspree.io/darius.lewis@stu.mmu.ac.uk" method="post">
-                          <p>
-                              <label for="contact-name">Name</label>
-                              <input id="contact-name" type="text" name="contact-name" />
-                          </p>
-                          <p>
-                              <label for="contact-email">Email Address</label>
-                              <input id="contact-email" type="email" name="contact-email" /> </p>
-                          <p>
-                              <label for="contact-phone">Phone Number</label>
-                              <input id="contact-phone" type="tel" name="contact-phone" /> </p>
-                          <p>
-                              <label for="contact-message">Your message:</label>
-                              <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
-                          </p>
-                          <p>
-                              <input type="submit" class="button submit-button" value="Send my message" /> </p>
-                      </form>
-                  </div>
-                </noscript>
             </div>
         </section>
         <footer class="page-footer">
@@ -162,7 +140,7 @@
 
             $( document ).ready(function() {
               $('.show-button').removeClass("form-hide");
-
+              $('#contact .container-content .content').removeClass("form-show");
             });
           var  nav = $(".page-nav");
               navScrolled = "page-nav-scrolled";
