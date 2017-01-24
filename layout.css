@@ -268,7 +268,7 @@ textarea {
   display: flex;
 }
 
-.show-button, .contact-me h2 {
+.contact-me h2 {
   display: flex!important;
 }
 
@@ -278,7 +278,7 @@ textarea {
 }
 
 .form-hide {
-  display: none;
+  display: none!important;
 }
 
 #contact .container-content .content {
