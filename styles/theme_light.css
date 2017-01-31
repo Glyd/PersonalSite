@@ -50,6 +50,7 @@ footer {
   border-top: 1px solid #52658F;
 }
 
-footer a:link, footer a:focus, footer a:visited, footer a:hover {
+footer a:link, footer a:focus, footer a:visited, footer a:hover, .theme-toggle-light {
   color: #52658F;
+  text-decoration: underline;
 }

@@ -51,6 +51,7 @@ footer {
   border-top: 1px solid #DCD8CF;
 }
 
-footer a:link, footer a:focus, footer a:visited, footer a:hover {
+footer a:link, footer a:focus, footer a:visited, footer a:hover, .theme-toggle-dark {
   color: #DCD8CF;
+  text-decoration: underline;
 }
