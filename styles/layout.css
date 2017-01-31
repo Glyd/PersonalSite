@@ -147,8 +147,8 @@ section {
 
 
 section, .header-content {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .container-content h2 {
@@ -169,6 +169,12 @@ section, .header-content {
   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
   -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
+}
+
+.image-gallery-container {
+
+  padding-left: 5%!important;
+  padding-right: 5%!important;
 }
 
 .image-gallery-container .an-image {
@@ -200,12 +206,22 @@ img {
     padding-top: 0.1rem;
     margin-bottom: 1rem;
   }
+
+  section, .header-content {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 @media only screen and (max-width: 640px) {
   .image-gallery-container .container-content .content {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  section, .header-content {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
