@@ -1,0 +1,55 @@
+/* box sizing */
+
+html {
+  color: #333A56;
+}
+body {
+  background-color: #F7F5E6;
+}
+
+body section p {
+  color: #52658F;
+}
+
+.page-nav {
+  background-color: #F7F5E6;
+  border-bottom: 1px solid #52658F;
+}
+
+.main {
+  background: #F7F5E6;
+}
+
+.page-nav a, .page-nav a:link, .page-nav a:focus .page-nav a:visited, .page-nav a:hover {
+  color: #333A56;
+}
+
+.page-nav a:active {
+  color: #F7F5E6;
+}
+
+.page-header h1 {
+  border-bottom: 2px solid #52658F;
+}
+
+.image-gallery-container .an-image {
+  border: 1px solid #52658F;
+}
+
+.button {
+	-moz-box-shadow:inset 0px 34px 0px -15px #333A56;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #333A56;
+	box-shadow:inset 0px 34px 0px -15px #333A56;
+	background-color:#333A56;
+	border:1px solid #52658F;
+	color:#F7F5E6;
+}
+
+footer {
+  background-color: #F7F5E6;
+  border-top: 1px solid #52658F;
+}
+
+footer a:link, footer a:focus, footer a:visited, footer a:hover {
+  color: #52658F;
+}

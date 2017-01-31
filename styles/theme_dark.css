@@ -1,0 +1,56 @@
+/* box sizing */
+
+html {
+  color: #E25D33;
+}
+body {
+  background-color: #191919;
+}
+
+body section p {
+  color: #DCD8CF;
+}
+
+.page-nav {
+  background-color: #191919;
+  border-bottom: 1px solid #DCD8CF;
+}
+
+.main {
+  background: #191919;
+}
+
+.page-nav a, .page-nav a:link, .page-nav a:focus .page-nav a:visited, .page-nav a:hover {
+  color: #E25D33;
+}
+
+.page-nav a:active {
+  color: #fff;
+}
+
+.page-header h1 {
+  border-bottom: 2px solid #DCD8CF;
+}
+
+.image-gallery-container .an-image {
+  border: 1px solid #DCD8CF;
+}
+
+.button {
+	-moz-box-shadow:inset 0px 34px 0px -15px #e25c33;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #e25c33;
+	box-shadow:inset 0px 34px 0px -15px #e25c33;
+	background-color:#e25c33;
+	border:1px solid #dcd8cf;
+	color:#dcd8cf;
+	text-shadow:0px -1px 0px #7a2a1d;
+}
+
+footer {
+  background-color: #191919;
+  border-top: 1px solid #DCD8CF;
+}
+
+footer a:link, footer a:focus, footer a:visited, footer a:hover {
+  color: #DCD8CF;
+}

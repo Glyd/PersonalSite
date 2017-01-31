@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="View information about Darius Lewis, a student at Manchester Metropoliton University." />
+    <meta name="description" content="Read about Darius Lewis, a software developer at the BBC and a student at Manchester Metropoliton University." />
     <!-- meta tags for Internet Explorer and mobile devices -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Darius Lewis</title>
     <!-- add your stylesheet and any other styling code, e.g. google fonts -->
-    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/theme_light.css" />
     <script src="https://use.fontawesome.com/53da205558.js"></script> <!-- FontAwesome for icons -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -26,7 +27,7 @@
         <nav class="page-nav">
             <ul>
                 <li>
-                  <a href="#about">
+                  <a href="#about" onclick="this.active();">
                     <i class="fa fa-user-o fa-2x"></i>
                     <p>About Me</p>
                   </a>
@@ -132,48 +133,14 @@
                 <span class="footer-text"><a href="https://github.com/glyd/PersonalSite/">View the source on GitHub</a></span><br>
                 <span class="footer-text">Tutor <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a></span>
                 <span class="footer-separator">&middot;</span> <span class="footer-text">
-                <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a>
+                <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br>
+                <span style="cursor:pointer" class="theme-toggle theme-toggle-light footer-text">Toggle Theme</span>
         </span> </p>
             </div>
         </footer>
-        <script type="text/javascript">
-
-            $( document ).ready(function() {
-              $('.show-button').removeClass("form-hide");
-              $('#contact .container-content .content').removeClass("form-show");
-            });
-          var  nav = $(".page-nav");
-              navScrolled = "page-nav-scrolled";
-              header = $('header').height();
-
-          var formShown=false;
-
-          $(window).scroll(function() {
-            if( $(this).scrollTop() > header ) {
-              nav.addClass(navScrolled);
-            } else {
-              nav.removeClass(navScrolled);
-            }
-          });
-
-          $(function() {
-            $(".show-button").click( function()
-                 {
-                   if (formShown) {
-                     $('.show-button').val("Show Form");
-                     $('#contact .container-content .content').addClass("form-hide");
-                     $('#contact .container-content .content').removeClass("form-show");
-                     formShown=false;
-                   } else {
-                     $('.show-button').val("Hide Form");
-                     $('#contact .container-content .content').addClass("form-show");
-                     $('#contact .container-content .content').removeClass("form-hide");
-                     formShown=true;
-                   }
-                 }
-            );
-          });
-        </script>
+        <script src="assets/scripts/sticky-nav.js"></script>
+        <script src="assets/scripts/form-toggle.js"></script>
+        <script src="assets/scripts/theme-toggle.js"></script>
     </main>
 </body>
 

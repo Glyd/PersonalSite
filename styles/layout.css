@@ -3,11 +3,9 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  color: #E25D33;
 }
 body {
   margin: 0;
-  background-color: #191919;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -27,7 +25,6 @@ p {
 }
 
 body section p {
-  color: #DCD8CF;
 }
 
 
@@ -38,16 +35,13 @@ body section p {
 
 .page-nav {
   padding-top: 0.3rem;
-  background-color: #191919;
   z-index: 150;
   position: relative;
   height: 5rem;
   margin-bottom: -80px;
-  border-bottom: 1px solid #DCD8CF;
 }
 
 .main {
-  background: #191919;
   padding: 110px 50px 50px;
   column-count: 2;
   column-gap: 40px;
@@ -82,12 +76,10 @@ body section p {
 }
 
 .page-nav a, .page-nav a:link, .page-nav a:focus .page-nav a:visited, .page-nav a:hover {
-  color: #E25D33;
 }
 
 .page-nav a:active {
   margin-top: -5px;
-  color: #fff;
   font-size: 1.2rem;
 }
 
@@ -132,7 +124,6 @@ body section p {
 
 .page-header h1 {
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #DCD8CF;
   padding-top: 12.5rem;
   max-width: 10rem;
   justify-content: center;
@@ -175,19 +166,17 @@ section, .header-content {
 /* image gallery media queries and size overrides */
 
 .image-gallery-container .container-content .content {
-      -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 3;
-      -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-      -moz-column-gap: 40px; /* Firefox */
-      column-gap: 40px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
 }
 
 .image-gallery-container .an-image {
   column-span: 1;
-  border: 1px solid #DCD8CF;
   border-radius: 2px;
-
 }
 
 img {
@@ -248,13 +237,7 @@ textarea {
 }
 
 .button {
-	-moz-box-shadow:inset 0px 34px 0px -15px #e25c33;
-	-webkit-box-shadow:inset 0px 34px 0px -15px #e25c33;
-	box-shadow:inset 0px 34px 0px -15px #e25c33;
-	background-color:#e25c33;
-	border:1px solid #dcd8cf;
 	cursor:pointer;
-	color:#dcd8cf;
   text-align: center;
 	font-family:Arial;
 	font-size:0.9rem;
@@ -264,7 +247,6 @@ textarea {
   padding: 0.7rem;
 	text-decoration:none;
   text-transform: uppercase;
-	text-shadow:0px -1px 0px #7a2a1d;
   display: flex;
 }
 
@@ -289,16 +271,10 @@ textarea {
 
 footer {
   padding-top: 0.2rem;
-  background-color: #191919;
   position: relative;
   height: 5rem;
-  border-top: 1px solid #DCD8CF;
   font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
-}
-
-footer a:link, footer a:focus, footer a:visited, footer a:hover {
-  color: #DCD8CF;
 }
 
 footer a:hover {
