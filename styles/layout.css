@@ -75,9 +75,6 @@ body section p {
   margin: 0.5rem;
 }
 
-.page-nav a, .page-nav a:link, .page-nav a:focus .page-nav a:visited, .page-nav a:hover {
-}
-
 .page-nav a:active {
   margin-top: -5px;
   font-size: 1.2rem;
@@ -277,6 +274,6 @@ footer {
   text-transform: uppercase;
 }
 
-footer a:hover {
+footer a:hover, .theme-toggle:hover {
   font-size: 1.1rem;
 }
