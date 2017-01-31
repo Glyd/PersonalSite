@@ -48,7 +48,7 @@ body section p {
 
 footer {
   background-color: #191919;
-  border-top: 1px solid #DCD8CF;
+  border-top: 1px dotted #DCD8CF;
 }
 
 footer a:link, footer a:focus, footer a:visited, .theme-toggle-dark {
