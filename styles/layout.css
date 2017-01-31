@@ -273,3 +273,7 @@ footer {
   font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
 }
+
+.page-nav a:hover, footer a:hover, .theme-toggle:hover {
+  font-weight: bold;
+}
