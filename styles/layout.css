@@ -7,11 +7,10 @@ html {
 body {
   margin: 0;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/* element styling (e.g. standard p, h1, h2, a, etc) */
 
 h1, h2 {
   font-family: 'Oswald', sans-serif;
@@ -23,15 +22,6 @@ p {
   font-size: 0.95rem;
   text-align: center;
 }
-
-body section p {
-}
-
-
-/* flexible content images code */
-
-
-/* navigation (using flexbox) */
 
 .page-nav {
   padding-top: 0.3rem;
@@ -105,8 +95,6 @@ body section p {
   padding-bottom: 5.5rem;
 }
 
-/* page header */
-
 .page-header {
   padding-top: 100px;
   text-transform: uppercase;
@@ -130,15 +118,10 @@ section {
   padding-top: 4rem;
 }
 
-/* main layout */
-
 .container-content p, .container-content h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* styling for the section content */
-
 
 .container-content h2 {
   font-size: 2rem;
@@ -167,8 +150,6 @@ img {
   height: auto;
   width: 100%;
 }
-
-/* form styling */
 
 input, label {
   margin-top: 0.5rem;
@@ -222,8 +203,6 @@ textarea {
 .contact-me .container-content .content {
   display: none;
 }
-
-/* footer */
 
 footer {
   padding-top: 0.2rem;
