@@ -146,12 +146,13 @@
                   <span class="theme-toggle theme-toggle-light footer-text" tabindex="0" style="cursor:pointer" >Toggle Theme</span>
                 </p>
             </div>
+            <!-- Allows enter key to be used instead of click for accessibility-->
             <script>
             $('.theme-toggle').keypress(function(key){
               if(key.which == 13){
                   $('.theme-toggle').click();
               }
-            }); <!-- Allows enter key to be used instead of click for accessibility-->
+            });
             </script>
         </footer>
         <script src="assets/scripts/sticky-nav.js"></script>
