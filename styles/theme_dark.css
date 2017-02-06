@@ -29,7 +29,8 @@ body section p {
 }
 
 .page-header h1 {
-  border-bottom: 2px solid #E25C33;
+  border-bottom: 2px solid;
+  border-color: inherit;
 }
 
 .image-gallery-container .an-image {
