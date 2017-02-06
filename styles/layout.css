@@ -165,7 +165,6 @@ section, .header-content {
 }
 
 .image-gallery-container .an-image {
-  column-span: 1;
   border-radius: 2px;
   margin-bottom: 15px;
 }
@@ -208,14 +207,9 @@ textarea {
   padding: 0.7rem;
 	text-decoration:none;
   text-transform: uppercase;
-  display: flex;
 }
 
-.contact-me h2 {
-  display: flex!important;
-}
-
-.form-show {
+.contact-me h2, .form-show {
   display: flex!important;
   justify-content: center;
 }
@@ -273,6 +267,7 @@ footer {
     padding-right: 10%!important;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .image-gallery-container {
     padding-left: 15%!important;
@@ -282,11 +277,7 @@ footer {
 
 @media screen and (min-width: 1280px) {
   .image-gallery-container .container-content .content {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
   }
 
