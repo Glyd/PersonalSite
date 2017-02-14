@@ -20,21 +20,18 @@ body section p {
   background: #F7F5E6;
 }
 
-.page-nav a, .page-nav a:link, .page-nav a:focus .page-nav a:visited {
+.page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus .page-nav ul li a:visited,
+.container-content p a {
   color: #333A56;
 }
 
-.page-nav a:active {
+.page-nav ul li a:active {
   color: #3656BA;
 }
 
 .page-header h1 {
   border-bottom: 2px solid;
   border-color: inherit;
-}
-
-.image-gallery-container .an-image {
-  border: 1px solid #52658F;
 }
 
 .button {
@@ -51,11 +48,11 @@ footer {
   border-top: 1px dotted #52658F;
 }
 
-footer a:link, footer a:focus, footer a:visited, .theme-toggle-light {
+a:link, a:focus, a:visited, .theme-toggle-light {
   color: #52658F;
   text-decoration: underline;
 }
 
-.page-nav a:hover, footer a:hover, .theme-toggle-light:hover {
+a:hover, .theme-toggle-light:hover {
   color:#436ceb;
 }

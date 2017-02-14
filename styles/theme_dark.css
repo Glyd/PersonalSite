@@ -33,10 +33,6 @@ body section p {
   border-color: inherit;
 }
 
-.image-gallery-container .an-image {
-  border: 1px solid #DCD8CF;
-}
-
 .button {
 	-moz-box-shadow:inset 0px 34px 0px -15px #E25C33;
 	-webkit-box-shadow:inset 0px 34px 0px -15px #E25C33;

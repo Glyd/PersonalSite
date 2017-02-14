@@ -30,6 +30,10 @@ header {
   padding-top: 10vh;
 }
 
+.page-nav ul li a {
+  text-decoration: none;
+}
+
 h1, h2 {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.1rem;
@@ -38,7 +42,6 @@ h1, h2 {
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  text-align: center;
 }
 
 body {
@@ -146,6 +149,10 @@ section {
   margin-right: auto;
 }
 
+.container-content p a {
+  font-weight: bold;
+}
+
 .container-content h2 {
   font-size: 2rem;
   text-align: center;
@@ -228,6 +235,8 @@ footer {
   height: 5rem;
   font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .page-nav a:hover, footer a:hover, .theme-toggle:hover {
