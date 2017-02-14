@@ -20,11 +20,11 @@ body section p {
   background: #191919;
 }
 
-.page-nav a, .page-nav a:link, .page-nav a:focus .page-nav a:visited {
+.page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus .page-nav ul li a:visited {
   color: #E25D33;
 }
 
-.page-nav a:active {
+.page-nav ul li a:active {
   color: #fff;
 }
 
@@ -48,11 +48,11 @@ footer {
   border-top: 1px dotted #DCD8CF;
 }
 
-footer a:link, footer a:focus, footer a:visited, .theme-toggle-dark {
+a:link, a:focus, a:visited, .theme-toggle-dark {
   color: #DCD8CF;
   text-decoration: underline;
 }
 
-.page-nav a:hover, footer a:hover, .theme-toggle-dark:hover {
+a:hover, .theme-toggle-dark:hover {
   color:#F3FFEB;
 }
