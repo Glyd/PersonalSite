@@ -1,8 +1,7 @@
-/* box sizing */
-
 html {
   color: #333A56;
 }
+
 body {
   background-color: #F7F5E6;
 }
@@ -20,13 +19,9 @@ body section p {
   background: #F7F5E6;
 }
 
-.page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus .page-nav ul li a:visited,
-.container-content p a {
+.page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus
+.page-nav ul li a:visited, .container-content p a {
   color: #333A56;
-}
-
-.page-nav ul li a:active {
-  color: #3656BA;
 }
 
 .page-header h1 {
@@ -53,6 +48,6 @@ a:link, a:focus, a:visited, .theme-toggle-light {
   text-decoration: underline;
 }
 
-a:hover, .theme-toggle-light:hover {
+p a:hover, .theme-toggle-light:hover, .page-nav ul li a:hover {
   color:#436ceb;
 }

@@ -1,5 +1,3 @@
-/* box sizing */
-
 html {
   color: #E25D33;
 }
@@ -20,12 +18,9 @@ body section p {
   background: #191919;
 }
 
-.page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus .page-nav ul li a:visited {
+.page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus,
+.page-nav ul li a:visited, .container-content p a {
   color: #E25D33;
-}
-
-.page-nav ul li a:active {
-  color: #fff;
 }
 
 .page-header h1 {
@@ -53,6 +48,6 @@ a:link, a:focus, a:visited, .theme-toggle-dark {
   text-decoration: underline;
 }
 
-a:hover, .theme-toggle-dark:hover {
+p a:hover, .theme-toggle-dark:hover, .page-nav ul li a:hover {
   color:#F3FFEB;
 }
