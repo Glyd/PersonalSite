@@ -165,8 +165,8 @@ section, .header-content {
 }
 
 .image-gallery-container {
-  padding-left: 5%!important;
-  padding-right: 5%!important;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .image-gallery-container .an-image {
@@ -215,15 +215,11 @@ textarea {
 }
 
 .contact-me h2, .form-show {
-  display: flex!important;
+  display: flex;
   justify-content: center;
 }
 
 .form-hide {
-  display: none!important;
-}
-
-.contact-me .container-content .content {
   display: none;
 }
 
@@ -258,8 +254,8 @@ footer {
   }
 
   .image-gallery-container {
-    padding-left: 10%!important;
-    padding-right: 10%!important;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
@@ -270,15 +266,15 @@ footer {
   }
 
   .image-gallery-container {
-    padding-left: 10%!important;
-    padding-right: 10%!important;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .image-gallery-container {
-    padding-left: 15%!important;
-    padding-right: 15%!important;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -303,8 +299,8 @@ footer {
     max-width: 100%;
   }
 
-  .image-gallery-container {
-    padding-left: 5%!important;
-    padding-right: 5%!important;
+  main .image-gallery-container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
