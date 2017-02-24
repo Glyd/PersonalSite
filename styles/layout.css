@@ -32,9 +32,9 @@ header {
   text-decoration: none;
 }
 
-h1, h2 {
-  font-family: 'Oswald', serif;
-  letter-spacing: 0.1rem;
+h1, h2, .header-content p {
+  font-family: 'Avenir', 'Helvetica', serif; /*Avenir may be Mac only*/
+  font-weight: 300;
 }
 
 p {
