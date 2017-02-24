@@ -126,7 +126,7 @@ body {
 
 .page-header h1 {
   padding-bottom: 0.5rem;
-  padding-top: 12.5rem;
+  margin-top: 12.5rem;
   max-width: 10rem;
   justify-content: center;
   display: inline;
