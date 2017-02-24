@@ -33,7 +33,7 @@ header {
 }
 
 h1, h2, .header-content p {
-  font-family: 'Avenir', 'Helvetica', serif; /*Avenir is Mac only*/
+  font-family: 'Avenir', 'Nunito', serif; /*Avenir is Mac only*/
   font-weight: 300;
 }
 
