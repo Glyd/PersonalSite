@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   $('.show-button').removeClass("form-hide");
-  $('#contact .container-content .content').removeClass("form-show");
+  $('#contact .container-content .content').removeClass("form-show").addClass("form-hide");
 });
 var  nav = $(".page-nav");
   navScrolled = "page-nav-scrolled";
