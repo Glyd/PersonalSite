@@ -238,6 +238,17 @@ footer {
 
 /* Media Queries */
 
+@media screen and (min-width:320px) {
+
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-content p {
+    font-size: 1.5rem;
+  }
+}
+
 /* Small */
 
 @media screen and (min-width:650px) {
