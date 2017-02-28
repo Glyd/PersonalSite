@@ -42,6 +42,14 @@ header {
   width: 100%;
 }
 
+.header-content {
+  padding-top: 15vh;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .header-image {
   background-image: url('http://placehold.it/350x350');
   width: 120px;
@@ -50,8 +58,16 @@ header {
   border: 1px solid #fff;
 }
 
-.header-content {
-  padding-top: 10vh;
+.header-content h1 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 10rem;
+  justify-content: center;
+  display: inline;
+}
+
+.header-content p {
+  font-size: 1.6rem;
 }
 
 /* Navigation */
@@ -115,35 +131,11 @@ header {
   top: 0;
 }
 
-/* Page Header */
-
-.page-header {
-  padding-top: 50px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.page-header h1 {
-  padding-bottom: 0.5rem;
-  margin-top: 12.5rem;
-  max-width: 10rem;
-  justify-content: center;
-  display: inline;
-  font-size: 3rem;
-}
-
-.page-header p {
-  font-size: 1.75rem;
-}
-
 /* Section */
 
 section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-section, .header-content {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -199,8 +191,7 @@ label {
 }
 
 textarea {
-  width: 20rem;
-  font-size: 0.9rem;
+  width: 15rem;
 }
 
 .button {
@@ -238,27 +229,6 @@ footer {
 
 /* Media Queries */
 
-/* Extra Small */
-
-@media screen and (max-width:320px) {
-
-  textarea {
-    width: 15rem;
-  }
-
-  .header-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .header-content p {
-    font-size: 1.5rem;
-  }
-
-  .container-content h2 {
-    font-size: 1.9rem;
-  }
-}
-
 /* Small */
 
 @media screen and (min-width:650px) {
@@ -278,13 +248,18 @@ footer {
     padding-right: 15%;
   }
 
+  .header-content h1 {
+    font-size: 3rem;
+  }
+
   .image-gallery-container {
     padding-left: 10%;
     padding-right: 10%;
   }
 
   .form-show textarea {
-    width: 1px;
+    width: 20rem;
+    font-size: 0.9rem;
   }
 }
 
