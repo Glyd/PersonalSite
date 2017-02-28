@@ -23,7 +23,7 @@ img {
 /* Fonts */
 
 h1, h2, .header-content p {
-  font-family: 'Avenir', 'Nunito', serif; /*Avenir is Mac only*/
+  font-family: '', 'Cinzel', serif; /*Avenir is Mac only*/
   font-weight: 300;
 }
 
@@ -238,7 +238,13 @@ footer {
 
 /* Media Queries */
 
+/* Extra Small */
+
 @media screen and (min-width:320px) {
+
+  textarea {
+    width: 15rem;
+  }
 
   .header-content h1 {
     font-size: 2.5rem;
@@ -246,6 +252,10 @@ footer {
 
   .header-content p {
     font-size: 1.5rem;
+  }
+
+  .container-content h2 {
+    font-size: 1.9rem;
   }
 }
 
@@ -271,6 +281,10 @@ footer {
   .image-gallery-container {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .form-show textarea {
+    width: 1px;
   }
 }
 
