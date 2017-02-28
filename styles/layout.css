@@ -68,7 +68,6 @@ header {
 .page-nav ul {
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
   padding-left: 0;
@@ -244,6 +243,7 @@ footer {
 
   .page-nav ul {
     justify-content: center;
+    flex-wrap: nowrap;
   }
 
   .page-nav ul li {
