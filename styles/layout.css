@@ -292,7 +292,7 @@ footer {
 
 @media screen and (min-width:840px) {
 
-  section, .header-content {
+  section {
     padding-left: 25%;
     padding-right: 25%;
   }
