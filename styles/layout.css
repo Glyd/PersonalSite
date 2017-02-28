@@ -1,12 +1,38 @@
+
+/* Box sizing and base styling*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
   -webkit-font-smoothing:antialiased; /* Nicer looking font on Chrome */
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+body {
+  margin: 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fonts */
+
+h1, h2, .header-content p {
+  font-family: 'Avenir', 'Nunito', serif; /*Avenir is Mac only*/
+  font-weight: 300;
+}
+
+p, textarea, input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+/* Header */
 
 header {
   display: flex;
@@ -28,36 +54,15 @@ header {
   padding-top: 10vh;
 }
 
-.page-nav ul li a {
-  text-decoration: none;
-}
-
-h1, h2, .header-content p {
-  font-family: 'Avenir', 'Nunito', serif; /*Avenir is Mac only*/
-  font-weight: 300;
-}
-
-p, textarea, input {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-}
-
-body {
-  margin: 0;
-}
+/* Navigation */
 
 .page-nav {
+  padding-bottom: 5.5rem;
   padding-top: 0.3rem;
   z-index: 150;
   position: relative;
   height: 5rem;
   margin-bottom: -80px;
-}
-
-.main {
-  padding: 110px 50px 50px;
-  column-count: 2;
-  column-gap: 40px;
 }
 
 .page-nav ul {
@@ -69,12 +74,29 @@ body {
   padding-left: 0;
 }
 
-.page-nav a {
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
+.page-nav ul li a {
   text-decoration: none;
-  display: inline-block;
-  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 4rem;
+}
+
+.page-nav a:active {
+  margin-top: -5px;
+  font-size: 1.2rem;
+}
+
+.page-nav a:hover, footer a:hover, .theme-toggle:hover {
+  font-weight: bold;
+}
+
+.page-nav i {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.3rem;
 }
 
 .page-nav p {
@@ -88,35 +110,13 @@ body {
   margin: 0.5rem;
 }
 
-.page-nav a:active {
-  margin-top: -5px;
-  font-size: 1.2rem;
-}
-
-.page-nav i {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 0.3rem;
-}
-
 .page-nav-scrolled {
   position: fixed;
   width: 100%;
   top: 0;
 }
 
-.page-nav a {
-  padding-left: 0;
-  padding-right: 0;
-  max-width: 4rem;
-}
-
-.page-nav {
-  padding-bottom: 5.5rem;
-}
+/* Page Header */
 
 .page-header {
   padding-top: 50px;
@@ -137,10 +137,19 @@ body {
   font-size: 1.75rem;
 }
 
+/* Section */
+
 section {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+section, .header-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Container Content */
 
 .container-content p {
   margin-left: auto;
@@ -159,10 +168,7 @@ section {
   margin-right: auto;
 }
 
-section, .header-content {
-  padding-left: 5%;
-  padding-right: 5%;
-}
+/* Image Gallery */
 
 .image-gallery-container {
   padding-left: 5%;
@@ -173,11 +179,7 @@ section, .header-content {
   margin-bottom: 50px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-}
+/* Form */
 
 input, label {
   margin-top: 0.5rem;
@@ -223,6 +225,8 @@ textarea {
   display: none;
 }
 
+/* Footer */
+
 footer {
   padding-top: 0.2rem;
   position: relative;
@@ -233,10 +237,9 @@ footer {
   text-align: center;
 }
 
-.page-nav a:hover, footer a:hover, .theme-toggle:hover {
-  font-weight: bold;
-}
+/* Media Queries */
 
+/* Small */
 @media screen and (min-width:650px) {
 
   .page-nav ul {
@@ -259,6 +262,8 @@ footer {
   }
 }
 
+/* Medium */
+
 @media screen and (min-width:840px) {
 
   section, .header-content {
@@ -272,6 +277,7 @@ footer {
   }
 }
 
+/* Medium-Wide */
 @media screen and (min-width: 1000px) {
   .image-gallery-container {
     padding-left: 30%;
@@ -283,6 +289,8 @@ footer {
     padding-right: 30%;
   }
 }
+
+/* Extra-Wide */
 
 @media screen and (min-width: 1280px) {
   .image-gallery-container .container-content .content {
