@@ -240,7 +240,7 @@ footer {
 
 /* Extra Small */
 
-@media screen and (min-width:320px) {
+@media screen and (max-width:320px) {
 
   textarea {
     width: 15rem;
