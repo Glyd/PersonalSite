@@ -239,6 +239,7 @@ footer {
 /* Media Queries */
 
 /* Small */
+
 @media screen and (min-width:650px) {
 
   .page-nav ul {
