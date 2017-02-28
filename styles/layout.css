@@ -58,7 +58,6 @@ header {
 
 .page-nav {
   padding-bottom: 5.5rem;
-  padding-top: 0.3rem;
   z-index: 150;
   position: relative;
   height: 5rem;
@@ -67,6 +66,7 @@ header {
 
 .page-nav ul {
   margin: 0;
+  margin-top: 0.3rem;
   display: flex;
   justify-content: space-around;
   list-style: none;
