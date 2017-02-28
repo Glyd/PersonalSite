@@ -23,7 +23,7 @@ img {
 /* Fonts */
 
 h1, h2, .header-content p {
-  font-family: '', 'Cinzel', serif; /*Avenir is Mac only*/
+  font-family: 'Avenir', 'Lato', serif; /*Avenir is Mac only*/
   font-weight: 300;
 }
 
