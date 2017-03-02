@@ -1,3 +1,5 @@
+/* Base styling */
+
 html {
   color: #E25D33;
 }
@@ -9,13 +11,15 @@ body section p {
   color: #DCD8CF;
 }
 
+.main {
+  background: #191919;
+}
+
+/* Navigation */
+
 .page-nav {
   background-color: #191919;
   border-bottom: 1px solid #DCD8CF;
-}
-
-.main {
-  background: #191919;
 }
 
 .page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus,
@@ -23,25 +27,18 @@ body section p {
   color: #E25D33;
 }
 
+.page-nav li .active i, .page-nav li .active p {
+  color: #DCD8CF;
+}
+
+/* Header */
+
 .page-header h1 {
   border-bottom: 2px solid;
   border-color: inherit;
 }
 
-.button {
-	-moz-box-shadow:inset 0px 34px 0px -15px #E25C33;
-	-webkit-box-shadow:inset 0px 34px 0px -15px #E25C33;
-	box-shadow:inset 0px 34px 0px -15px #E25C33;
-	background-color:#E25C33;
-	border:1px solid #DCD8CF;
-	color:#DCD8CF;
-	text-shadow:0px -1px 0px #7A2A1D;
-}
-
-footer {
-  background-color: #191919;
-  border-top: 1px dotted #DCD8CF;
-}
+/* Link styling */
 
 a:link, a:focus, a:visited, .theme-toggle-dark {
   color: #DCD8CF;
@@ -50,4 +47,21 @@ a:link, a:focus, a:visited, .theme-toggle-dark {
 
 p a:hover, .theme-toggle-dark:hover, .page-nav ul li a:hover {
   color:#F3FFEB;
+}
+
+/* Form */
+
+.button {
+	box-shadow:inset 0px 34px 0px -15px #E25C33;
+	background-color:#E25C33;
+	border:1px solid #DCD8CF;
+	color:#DCD8CF;
+	text-shadow:0px -1px 0px #7A2A1D;
+}
+
+/* Footer */
+
+footer {
+  background-color: #191919;
+  border-top: 1px dotted #DCD8CF;
 }

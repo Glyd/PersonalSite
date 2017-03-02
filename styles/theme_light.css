@@ -1,3 +1,5 @@
+/* Base styling */
+
 html {
   color: #333A56;
 }
@@ -10,13 +12,15 @@ body section p {
   color: #52658F;
 }
 
+.main {
+  background: #F7F5E6;
+}
+
+/* Navigation */
+
 .page-nav {
   background-color: #F7F5E6;
   border-bottom: 1px solid #52658F;
-}
-
-.main {
-  background: #F7F5E6;
 }
 
 .page-nav ul li a, .page-nav ul li a:link, .page-nav ul li a:focus
@@ -24,10 +28,29 @@ body section p {
   color: #333A56;
 }
 
+.page-nav li .active i, .page-nav li .active p {
+  color: #436ceb;
+}
+
+/* Header */
+
 .page-header h1 {
   border-bottom: 2px solid;
   border-color: inherit;
 }
+
+/* Link Styling */
+
+a:link, a:focus, a:visited, .theme-toggle-light {
+  color: #52658F;
+  text-decoration: underline;
+}
+
+p a:hover, .theme-toggle-light:hover, .page-nav ul li a:hover {
+  color:#436ceb;
+}
+
+/* Form */
 
 .button {
 	-moz-box-shadow:inset 0px 34px 0px -15px #333A56;
@@ -38,16 +61,9 @@ body section p {
 	color:#F7F5E6;
 }
 
+/* Footer */
+
 footer {
   background-color: #F7F5E6;
   border-top: 1px dotted #52658F;
-}
-
-a:link, a:focus, a:visited, .theme-toggle-light {
-  color: #52658F;
-  text-decoration: underline;
-}
-
-p a:hover, .theme-toggle-light:hover, .page-nav ul li a:hover {
-  color:#436ceb;
 }
