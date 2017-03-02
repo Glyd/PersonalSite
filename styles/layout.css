@@ -13,6 +13,9 @@ html {
 
 body {
   margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.9rem;
+  text-align: justify; /* suggestion from https://www.reddit.com/r/web_design/comments/5vxy8c/feedback_friday_february_24_2017/dedxha8/ */
 }
 
 img {
@@ -117,6 +120,7 @@ header {
 .page-nav p {
   padding-top: 0.3rem;
   font-size: 0.9rem;
+  line-height: normal;
   max-width: 100%;
   font-weight: bold;
   text-align: center;
@@ -168,6 +172,9 @@ section {
 
 .image-gallery-container .an-image .image-caption {
   margin-bottom: 50px;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  text-align: justify; /* suggestions from https://www.reddit.com/r/web_design/comments/5vxy8c/feedback_friday_february_24_2017/dedxha8/ */
 }
 
 /* Form */
