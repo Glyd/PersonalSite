@@ -99,9 +99,11 @@ header {
   max-width: 4rem;
 }
 
-.page-nav a:active {
-  margin-top: -5px;
-  font-size: 1.2rem;
+@media screen and (min-width:768px) {
+  .page-nav a:active {
+    margin-top: -5px;
+    font-size: 1.2rem;
+  }
 }
 
 .page-nav a:hover, footer a:hover, .theme-toggle:hover {
