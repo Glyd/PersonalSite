@@ -312,7 +312,6 @@ footer {
   }
 
   .image-gallery-container .an-image {
-    width: 27vw;
   }
 
   .image-gallery-container .an-image .image-caption {
@@ -343,5 +342,10 @@ footer {
   .image-gallery-container {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  img {
+    width: 33.3vw;
+    height: auto;
   }
 }
