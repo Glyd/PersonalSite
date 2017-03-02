@@ -12,14 +12,16 @@ $(window).scroll(function() {
         var id = $(this).attr('id');
 
         //highlight earlier to account for minimised contact form
+        //otherwise only account for sticky nav bar
 
-        if (id != 'about')
+        if (id === 'contact'){
           target -= 250;
+        }
+        else {
+          target -= 100;
+        }
 
-        //to run when item on nav is clicked, otherwise it won't update
-        navItemChosen = window.location.href.match(id+'$');
-
-        if (position >= target || navItemChosen) {
+        if (position >= target) {
             $('.page-nav > ul > li > a').removeClass('active');
             $('.page-nav > ul > li > a[href="#' + id + '"]').addClass('active');
         }
