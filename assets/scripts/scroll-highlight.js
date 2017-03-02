@@ -16,7 +16,10 @@ $(window).scroll(function() {
         if (id != 'about')
           target -= 250;
 
-        if (position >= target) {
+        //to run when item on nav is clicked, otherwise it won't update
+        navItemChosen = window.location.href.match(id+'$');
+
+        if (position >= target || navItemChosen) {
             $('.page-nav > ul > li > a').removeClass('active');
             $('.page-nav > ul > li > a[href="#' + id + '"]').addClass('active');
         }

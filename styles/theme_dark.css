@@ -45,8 +45,12 @@ a:link, a:focus, a:visited, .theme-toggle-dark {
   text-decoration: underline;
 }
 
-p a:hover, .theme-toggle-dark:hover, .page-nav ul li a:hover {
-  color:#F3FFEB;
+/* Hover effects mess up on mobile */
+
+@media screen and (min-width:768px) {
+  p a:hover, .theme-toggle-dark:hover, .page-nav ul li a:hover {
+    color:#F3FFEB;
+  }
 }
 
 /* Form */
