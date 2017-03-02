@@ -14,10 +14,11 @@ $(window).scroll(function() {
         //highlight earlier to account for minimised contact form
         //otherwise only account for sticky nav bar
 
-        if (id === 'contact'){
+        if (id === 'contact' || $( window ).width() > 1280){
+          target -= 600;
+        } else if (id === 'contact') {
           target -= 250;
-        }
-        else {
+        } else {
           target -= 100;
         }
 
