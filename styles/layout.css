@@ -240,6 +240,12 @@ footer {
 
 /* Small */
 
+@media screen and (min-width:385px) {
+  .page-nav {
+    padding-bottom: 4rem;
+  }
+}
+
 @media screen and (min-width:650px) {
 
   .page-nav ul {
@@ -248,8 +254,8 @@ footer {
   }
 
   .page-nav ul li {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   section, header {
