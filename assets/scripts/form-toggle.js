@@ -1,18 +1,16 @@
-var formShown = false;
+$( document ).ready(function() {
+  $('.form-show').hide();
+});
+
+$('.form-show').after('<input type="submit" class="button show-form-button" value="Show Form" /> <br/>');
 
 $(function() {
-$(".show-button").click( function() {
-       if (formShown) {
-         $('.show-button').val("Show Form");
-         $('#contact .container-content .content').addClass("form-hide");
-         $('#contact .container-content .content').removeClass("form-show");
-         formShown=false;
-       } else {
-         $('.show-button').val("Hide Form");
-         $('#contact .container-content .content').addClass("form-show");
-         $('#contact .container-content .content').removeClass("form-hide");
-         formShown=true;
-       }
-     }
-);
+  $(".show-form-button").click( function(e) {
+    e.preventDefault();
+    $('.form-show').slideToggle('50', function() {
+      $('.show-form-button').fadeOut('50', function() {
+        $('.show-form-button').remove();
+      });
+    });
+  });
 });
