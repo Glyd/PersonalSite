@@ -7,7 +7,7 @@ $(document).ready(function(){
         adaptiveHeight: true,
         prevArrow: ''
       });
-    } else if ($( '.image-gallery' ).hasClass( '.slick-initialized' )) {
+    } else if ($( '.image-gallery' ).hasClass( 'slick-initialized' )) {
       $( '.image-gallery' ).slick( 'unslick' );
     }
   }
