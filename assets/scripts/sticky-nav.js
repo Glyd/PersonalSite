@@ -1,6 +1,6 @@
-var  nav = $(".page-nav");
-  navScrolled = "page-nav-scrolled";
-  header = $('header').height();
+var nav = $(".page-nav");
+var navScrolled = "page-nav-scrolled";
+var header = $('header').height();
 
 $(window).scroll(function() {
 if( $(this).scrollTop() > header ) {

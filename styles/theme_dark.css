@@ -56,7 +56,7 @@ a:link, a:focus, a:visited, .theme-toggle-dark {
 
 /* Form */
 
-.button {
+.button, .slick-next {
 	box-shadow:inset 0px 34px 0px -15px #E25C33;
 	background-color:#E25C33;
 	border:1px solid #DCD8CF;

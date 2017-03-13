@@ -177,6 +177,11 @@ section {
   text-align: justify; /* suggestions from https://www.reddit.com/r/web_design/comments/5vxy8c/feedback_friday_february_24_2017/dedxha8/ */
 }
 
+.slick-next {
+  width: 100%;
+  height: 40px;
+}
+
 /* Form */
 
 input, label {
@@ -201,7 +206,7 @@ textarea {
   width: 15rem;
 }
 
-.button {
+.button, .slick-next {
 	cursor:pointer;
 	font-family:Arial;
 	font-size:0.9rem;

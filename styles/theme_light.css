@@ -52,7 +52,7 @@ p a:hover, .theme-toggle-light:hover, .page-nav ul li a:hover {
 
 /* Form */
 
-.button {
+.button, .slick-next {
 	box-shadow:inset 0px 34px 0px -15px #333A56;
 	background-color:#333A56;
 	border:1px solid #52658F;
