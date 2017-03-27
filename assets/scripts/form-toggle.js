@@ -8,7 +8,7 @@ $(function() {
   $(".show-form-button").click( function(e) {
     e.preventDefault();
     $('.form-show').slideToggle('50', function() {
-      $('.show-form-button').fadeOut('50', function() {
+      $('.show-form-button').fadeOut('1', function() {
         $('.show-form-button').remove();
       });
     });
