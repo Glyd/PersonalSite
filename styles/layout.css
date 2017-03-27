@@ -314,16 +314,16 @@ footer {
 @media screen and (min-width: 1280px) {
   .image-gallery-container .container-content .content {
     column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-gap: 40px;
-  }
-
-  .image-gallery-container .an-image {
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
   }
 
   .image-gallery-container .an-image .image-caption {
     margin-bottom: 0;
   }
-
 
   .header-content {
     padding-left: 30%;
